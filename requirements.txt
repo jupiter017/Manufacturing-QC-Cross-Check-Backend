@@ -1,6 +1,6 @@
 # Core FastAPI stack
 fastapi==0.116.1
-uvicorn==0.35.0
+uvicorn[standard]==0.35.0
 python-multipart==0.0.20
 
 # Database
@@ -8,17 +8,17 @@ sqlalchemy==2.0.43
 alembic==1.16.4
 psycopg2-binary==2.9.10
 
-# File processing
-PyPDF2==3.0.1
+# File processing (optimized versions)
+pypdf==6.0.0
 pandas==2.3.2
 openpyxl==3.1.5
 pillow==11.3.0
 pdfplumber==0.11.7
-python-magic-bin==0.4.14
+python-magic==0.4.27
 
-# OCR for manufacturing text
-easyocr>=1.7.0
-opencv-python>=4.8.0
+# OCR for manufacturing text (pinned versions for reproducibility)
+easyocr==1.7.2
+opencv-python-headless==4.8.1.78
 
 # Async support
 aiofiles==24.1.0
@@ -27,5 +27,8 @@ aiofiles==24.1.0
 pydantic==2.11.7
 pydantic-settings==2.10.1
 python-dotenv==1.1.1
+
+# Additional optimizations
+wheel==0.45.1
 
 
